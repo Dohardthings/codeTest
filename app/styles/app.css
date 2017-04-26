@@ -183,7 +183,7 @@ select {
   border-bottom: 3px solid transparent;
 }
 
-.sorting-menu-item:active {
+.active {
   border-bottom: 3px solid #FF3434;
 }
 .sorting-menu-item:after {
