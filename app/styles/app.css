@@ -51,7 +51,7 @@ a {
 }
 
 .nav-link-individual {
-  color: white;
+  color: #FFFFFF;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   margin: 1rem;
@@ -59,7 +59,7 @@ a {
 }
 
 .nav-link-individual-2 {
-  color: white;
+  color: #FFFFFF;
   font-family: 'Lato', sans-serif;
   margin: 1rem;
   font-weight: bold;
@@ -87,7 +87,7 @@ a {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   font-size: 3rem;
-  color: white;
+  color: #FFFFFF;
   width: 50%;
   margin: auto;
   text-align: center;
@@ -99,7 +99,7 @@ a {
   flex-direction: column;
   margin: auto;
   width: 50%;
-  min-width: 320px;
+  min-width: 300px;
 }
 
 .input {
@@ -206,14 +206,16 @@ select {
 
 .event-parent {
   width: 30%;
-  min-width: 343px;
+  min-width: 310px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .event-parent-2 {
   width: 30%;
-  min-width: 343px;
+  max-width: 100%;
+  min-width: 310px;
   display: flex;
   flex-direction: column;
 }
@@ -356,14 +358,25 @@ footer {
 
 
 /*       Mobile        */
+@media screen and (max-width: 712px) {
 
-@media screen and (max-width: 768px) {
+  .event-parent {
+    flex-grow: 1;
+  }
+  .event-parent-2 {
+    flex-grow: 1;
+  }
+}
+@media screen and (max-width: 767px) {
   .nav-link-individual-2 {
     display: none;
   }
   .hero {
     width: 90%;
     margin-bottom: 2rem;
+  }
+  .input {
+    text-align: center;
   }
   .form-row-2 {
     flex-wrap: wrap;
@@ -374,17 +387,30 @@ footer {
   .button-red {
     width: 100%;
     margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-2 {
+    margin-bottom: 2rem;
+  }
+
+  .event-list {
+    justify-content: center;
+
   }
   .event-parent {
+    margin: auto;
     margin-bottom: 2rem;
-    flex-grow: 1;
+
+
   }
   .event-parent-2 {
+    margin: auto;
     margin-bottom: 2rem;
-    flex-grow: 1;
+
   }
   .discover-more {
-    margin-top: 2rem;
+    margin-top: 0;
   }
   .footer-container {
     flex-direction: column-reverse;
@@ -400,24 +426,31 @@ footer {
   }
   .sorting-menu {
     width: 100%;
-    justify-content: space-between;
   }
 }
 
 
 /*         Tablet       */
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1090px) {
   .event-parent-2 {
     width: 100%;
     margin-bottom: 1rem;
   }
+  .event-parent {
+    max-width: 420px;
+    margin-bottom: 1rem;
+    min-width: 320px;
+  }
   .ibanez {
     height: 320px;
   }
+  .event-list {
+    justify-content: space-around;
+  }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1143px) {
+@media screen and (min-width: 1090px) and (max-width: 1143px) {
   .event-list {
     justify-content: space-around;
   }
