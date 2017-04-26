@@ -178,7 +178,7 @@ select {
   font-size: 1rem;
   padding-bottom: .4rem;
   color: #000000;
-  margin-right: 1.5rem;
+  margin-right: .7rem;
   margin-bottom: 0;
   border-bottom: 3px solid transparent;
 }
@@ -426,6 +426,7 @@ footer {
   }
   .sorting-menu {
     width: 100%;
+
   }
 }
 
